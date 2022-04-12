@@ -42,11 +42,13 @@ const displayTodo = (todos) => {
             ? ((taskComplete.textContent = "Task Incomplete"),
               (taskComplete.style.backgroundColor = "red"),
               (taskComplete.style.color = "black"),
-              (taskComplete.style.fontWeight = "bold"))
+              (taskComplete.style.fontWeight = "bold"),
+              (taskComplete.style.borderRadius = "5px"));
             : ((taskComplete.textContent = "Task Complete"),
               (taskComplete.style.backgroundColor = "green"),
               (taskComplete.style.textDecorationLine = "line-through"),
-              (taskComplete.style.fontWeight = "bold"));
+              (taskComplete.style.fontWeight = "bold"),
+              (taskComplete.style.borderRadius = "5px"));
 
         let editBtn = document.createElement("button");
         editBtn.innerText = "Edit";
